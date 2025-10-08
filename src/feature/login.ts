@@ -12,10 +12,10 @@ const usuarios: Usuario[] = [
 export function login(email: string, password: string): boolean {
 const usuario = usuarios.find(u => u.email === email && u.password === password);
 if (usuario) {
-console.log(` Bienvenido ${usuario.email}`);
+console.log(` Bienvenido ${usuario.email}, has iniciado sesión correctamente.`);
 return true;
 } else {
-console.log(" Credenciales incorrectas");
+console.log(" Credenciales incorrectas, vuelve a intentarlo.");
 return false;
 }
 }
